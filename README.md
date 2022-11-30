@@ -50,6 +50,7 @@ See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
 ### Step:
 1. 工作空间的编译
+
 *编译机械臂的工程
 ```
 cd kr260
@@ -61,7 +62,8 @@ colcon build
 ros2 run usb_cam usb_cam
 ```
 
-3. show image (new terminal) 
+3. show image (new terminal)
+
 *显示摄像头采集到的彩色数据
 ```
 cd kr260
@@ -69,6 +71,7 @@ source install/setup.bash
 ros2 run opencv_ros2 sub
 ```
 4. show color detection (new terminal)
+
 *显示识别区域颜色识别后的结果(hsv)
 ```
 cd kr260
@@ -76,7 +79,7 @@ source install/setup.bash
 ros2 run opencv_ros2 video_subscriber
 ```
 5. Robotic Arm (new terminal)
-6.
+
 *机械臂会根据摄像头的颜色识别结果，抓取物体，并按颜色分类放置
 
 *此处的指令名称来自参考的设计，其本身是人脸识别，进一步修改时保留了这个名字
