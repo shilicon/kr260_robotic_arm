@@ -41,7 +41,7 @@ sudo apt install ros-humble-usb-cam
 
 ## 机械臂工程配置部分
 
-### example structure project 
+### 设计参考 
 See [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
 
 and
