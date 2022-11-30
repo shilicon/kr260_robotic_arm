@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format2.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="2">
+  <name>vision_opencv</name>
+  <version>3.2.1</version>
+  <description>Packages for interfacing ROS2 with OpenCV, a library of programming functions for real time computer vision.</description>
+  <maintainer email="kenjibrameld@gmail.com">Kenji Brameld</maintainer>
+  <license>Apache License 2.0</license>
+  <license>BSD</license>
+
+  <url type="website">http://www.ros.org/wiki/vision_opencv</url>
+  <url type="bugtracker">https://github.com/ros-perception/vision_opencv/issues</url>
+  <url type="repository">https://github.com/ros-perception/vision_opencv</url>
+
+  <author>Patrick Mihelich</author>
+  <author>James Bowman</author>
+  <author>Vincent Rabaud</author>
+  <author email="ethan.gao@linux.intel.com">Ethan Gao</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>cv_bridge</exec_depend>
+  <exec_depend>image_geometry</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

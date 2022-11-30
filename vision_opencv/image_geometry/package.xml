@@ -1,0 +1,32 @@
+<package format="2">
+  <name>image_geometry</name>
+  <version>3.2.1</version>
+  <description>
+    `image_geometry` contains C++ and Python libraries for interpreting images
+    geometrically. It interfaces the calibration parameters in sensor_msgs/CameraInfo
+    messages with OpenCV functions such as image rectification, much as cv_bridge
+    interfaces ROS sensor_msgs/Image with OpenCV data types.
+  </description>
+  <maintainer email="kenjibrameld@gmail.com">Kenji Brameld</maintainer>
+  <license>Apache License 2.0</license>
+  <license>BSD</license>
+  <url>http://www.ros.org/wiki/image_geometry</url>
+
+  <author>Patrick Mihelich</author>
+  <author>Vincent Rabaud</author>
+  <author email="mikael@osrfoundation.org">Mikael Arguedas</author>
+
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+  <buildtool_depend>ament_cmake_ros</buildtool_depend>
+
+  <depend>libopencv-dev</depend>
+  <depend>sensor_msgs</depend>
+
+  <test_depend>ament_cmake_gtest</test_depend>
+  <test_depend>ament_cmake_pytest</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
