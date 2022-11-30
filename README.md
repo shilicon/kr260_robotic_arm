@@ -3,12 +3,19 @@
 
 ## Environment
 Ubuntu版本：Ubuntu 22.0
+
 ROS2版本：ROS2 Humble
+
 编程语言：Python 3.10
+
 机械臂类型：STM32驱动6自由度PWM机械臂
+
 机械臂通信方式：USB 串口通信
+
 摄像头：免驱USB摄像头
+
 [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
+
 [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
 # Applications
@@ -34,7 +41,9 @@ sudo apt install ros-humble-usb-cam
 
 ### example structure project 
 See [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
+
 and
+
 See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
 ### Step:
