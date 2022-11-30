@@ -20,7 +20,9 @@ ROS2版本：ROS2 Humble
 
 # Applications
 *实时图像显示
+
 *红绿蓝颜色识别
+
 *机械臂定点抓取物体，对颜色物体进行分类放置
  
 # 使用流程：
@@ -74,7 +76,9 @@ source install/setup.bash
 ros2 run opencv_ros2 video_subscriber
 ```
 5. Robotic Arm (new terminal)
+6.
 *机械臂会根据摄像头的颜色识别结果，抓取物体，并按颜色分类放置
+
 *此处的指令名称来自参考的设计，其本身是人脸识别，进一步修改时保留了这个名字
 ```
 cd kr260
