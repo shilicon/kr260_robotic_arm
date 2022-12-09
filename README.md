@@ -61,6 +61,13 @@ and
 See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
 ### 3.2 Step:
+0. 下载工程文件
+
+使用以下指令下载ROS2的文件
+
+```
+git clone https://github.com/shilicon/kr260
+```
 1. 工作空间的编译
 
 *编译机械臂的工程
