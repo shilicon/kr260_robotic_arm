@@ -1,7 +1,19 @@
 # kr260
 这是一个在KR260上实现机械臂抓取物体的工程
+## Table of Contents
 
-## Environment
+- [0. Environment](#0-Environment)
+
+- [1. Applications](#1-Applications)
+- [2. 使用流程](#2-使用流程)
+  - [2.1 KR260 启动部分](#21-KR260-启动部分)
+  - [2.2 KR260 ROS环境配置部分](#22-KR260-ROS环境配置部分)
+    - [2.2.1 ROS2](#221-ROS2)
+    - [2.2.2 Camera](#222-Camera)
+- [3. 机械臂工程配置部分](#3-机械臂工程配置部分)
+  - [3.1 设计参考](#31-设计参考)
+  - [3.2 Step](#32-step)
+## 0. Environment
 Ubuntu版本：Ubuntu 22.0
 
 ROS2版本：ROS2 Humble
@@ -18,37 +30,37 @@ ROS2版本：ROS2 Humble
 
 [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
-# Applications
+# 1. Applications
 *实时图像显示
 
 *红绿蓝颜色识别
 
 *机械臂定点抓取物体，对颜色物体进行分类放置
  
-# 使用流程：
+# 2. 使用流程：
 
-## KR260 启动部分
+## 2.1 KR260 启动部分
 See [如何启动KR260](https://thzn1lcm0h.feishu.cn/docx/doxcn2yrBMQl4JnLwFVXuW3C4LN)
 
-## KR260 ROS环境配置部分
-### ROS2
+## 2.2 KR260 ROS环境配置部分
+### 2.2.1 ROS2
 See [在KR260上运行ROS](https://thzn1lcm0h.feishu.cn/docx/doxcnyfMwmHVpES1tX9Ex9bRfkb)
 
-### Camera
+### 2.2.2 Camera
 ```
 sudo apt install ros-humble-usb-cam
 ```
 
-## 机械臂工程配置部分
+## 3. 机械臂工程配置部分
 
-### 设计参考 
+### 3.1 设计参考 
 See [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
 
 and
 
 See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
-### Step:
+### 3.2 Step:
 1. 工作空间的编译
 
 *编译机械臂的工程
