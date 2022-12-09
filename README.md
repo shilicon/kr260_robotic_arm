@@ -1,5 +1,9 @@
 # kr260
-这是一个在KR260上实现机械臂抓取物体的工程
+这是一个在KR260上实现机械臂抓取物体的工程，目前提供的文件有：
+*可实现机械臂功能的ROS文件
+*启动KR260的教程文档
+*在KR260 Ubuntu上安装ROS的教程文档
+*使用PL+PS端的Linux image文档 (与工程无关，提供参考开发)
 ## Table of Contents
 
 - [0. Environment](#0-Environment)
@@ -40,7 +44,7 @@ ROS2版本：ROS2 Humble
 # 2. 使用流程：
 
 ## 2.1 KR260 启动部分
-See [如何启动KR260](https://thzn1lcm0h.feishu.cn/docx/doxcn2yrBMQl4JnLwFVXuW3C4LN)
+See [如何启动KR260](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8KR260.md)
 
 ## 2.2 KR260 ROS环境配置部分
 ### 2.2.1 ROS2
