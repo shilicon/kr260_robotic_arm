@@ -44,7 +44,7 @@ See [如何启动KR260](https://thzn1lcm0h.feishu.cn/docx/doxcn2yrBMQl4JnLwFVXuW
 
 ## 2.2 KR260 ROS环境配置部分
 ### 2.2.1 ROS2
-See [在KR260上运行ROS](https://thzn1lcm0h.feishu.cn/docx/doxcnyfMwmHVpES1tX9Ex9bRfkb)
+See [在KR260上运行ROS](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%9C%A8KR260%E4%B8%8A%E8%BF%90%E8%A1%8CROS)
 
 ### 2.2.2 Camera
 ```
