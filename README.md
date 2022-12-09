@@ -34,43 +34,74 @@ ROS2版本：ROS2 Humble
 
 [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
-# 1. Applications
+## 1. Applications
 *实时图像显示
 
 *红绿蓝颜色识别
 
 *机械臂定点抓取物体，对颜色物体进行分类放置
  
-# 2. 使用流程：
+## 2. 使用流程：
 
-## 2.1 KR260 启动部分
+### 2.1 KR260 启动部分
 See [如何启动KR260](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8KR260.md)
 
-## 2.2 KR260 ROS环境配置部分
-### 2.2.1 ROS2
+### 2.2 KR260 ROS环境配置部分
+#### 2.2.1 ROS2
 See [在KR260上运行ROS](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%9C%A8KR260%E4%B8%8A%E8%BF%90%E8%A1%8CROS)
 
-### 2.2.2 Camera
+#### 2.2.2 Camera
 ```
 sudo apt install ros-humble-usb-cam
 ```
 
-## 3. 机械臂工程配置部分
+### 3. 机械臂工程配置部分
 
-### 3.1 设计参考 
+#### 3.1 设计参考 
 See [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
 
 and
 
 See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
-### 3.2 Step:
+#### 3.2 Step:
 0. 下载工程文件
 
 使用以下指令下载ROS2的文件
 
 ```
 git clone https://github.com/shilicon/kr260
+```
+文件结构如下：
+
+```
+├── opencv_ros2
+│   ├── opencv_ros2
+│   ├── resource
+│   └── test
+└── vision_opencv
+    ├── cv_bridge
+    │   ├── cmake
+    │   ├── doc
+    │   ├── include
+    │   │   └── cv_bridge
+    │   ├── python
+    │   │   └── cv_bridge
+    │   ├── src
+    │   └── test
+    ├── image_geometry
+    │   ├── doc
+    │   ├── image_geometry
+    │   ├── include
+    │   │   └── image_geometry
+    │   ├── src
+    │   └── test
+    ├── opencv_tests
+    │   ├── launch
+    │   ├── opencv_tests
+    │   └── resource
+    └── vision_opencv
+
 ```
 1. 工作空间的编译
 
