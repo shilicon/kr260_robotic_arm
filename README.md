@@ -13,8 +13,8 @@
 - [1. 使用流程](#1-使用流程)
   - [1.1 KR260 启动](#11-kr260-启动)
   - [1.2 KR260 ROS环境配置](#12-kr260-ros环境配置)
-    -[1.2.1 ROS2](#121-ros2)
-    -[1.2.2 Camera](#122-camera)
+    - [1.2.1 ROS2](#121-ros2)
+    - [1.2.2 Camera](#122-camera)
 - [2. 机械臂工程配置](#2-机械臂工程配置)
   - [2.1 设计参考](#21-设计参考)
   - [2.2 主要步骤](#22-主要步骤)
@@ -22,6 +22,7 @@
 ## 0. Environment
 
 本项目使用AMD/Xilinx的Kria KR260 FPGA开发套件
+
 关于KR260的官方介绍在这里：https://china.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html
 
 本项目在以下环境中完成测试：
@@ -32,9 +33,9 @@
 - 机械臂通信方式：USB 串口通信
 - 摄像头：免驱USB摄像头
 
-[opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
-
-[vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
+摄像头识别的部分，使用了OpenCV框架：
+- [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
+- [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
  
 ## 1. 使用流程：
 
