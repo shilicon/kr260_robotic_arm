@@ -1,38 +1,36 @@
-# kr260
-这是一个在KR260上实现机械臂抓取物体的工程，目前提供的文件有：
+# 基于KR260的机械臂控制器设计
+这是一个在AMD/Xilinx Kria KR260 FPGA板卡上实现机械臂抓取物体的工程，目前提供的文件有：
 
-*可实现机械臂功能的ROS文件,功能：图像实时显示，红绿蓝颜色识别，机械臂定点物体抓取，分类放置。
-
-*启动KR260的教程文档
-
-*在KR260 Ubuntu上安装ROS的教程文档
-
-*使用PL+PS端的Linux image文档 (与工程无关，提供参考开发)
+- 可实现机械臂功能的ROS文件,功能：图像实时显示，红绿蓝颜色识别，机械臂定点物体抓取，分类放置。
+- 启动KR260的教程文档
+- 在KR260 Ubuntu上安装ROS的教程文档
+- 使用PL+PS端的Linux image文档 (与工程无关，提供参考开发)
 
 ## Table of Contents
 
 - [0. Environment](#0-Environment)
 
 - [1. 使用流程](#1-使用流程)
-  - [1.1 KR260 启动部分](#11-kr260-启动部分)
-  - [1.2 KR260 ROS环境配置部分](#12-kr260-ros环境配置部分)
+  - [1.1 KR260 启动](#11-kr260-启动)
+  - [1.2 KR260 ROS环境配置](#12-kr260-ros环境配置)
     -[1.2.1 ROS2](#121-ros2)
     -[1.2.2 Camera](#122-camera)
-- [2. 机械臂工程配置部分](#2-机械臂工程配置部分)
+- [2. 机械臂工程配置](#2-机械臂工程配置)
   - [2.1 设计参考](#21-设计参考)
-  - [2.2 Step](#22-step)
+  - [2.2 主要步骤](#22-主要步骤)
+
 ## 0. Environment
-Ubuntu版本：Ubuntu 22.0
 
-ROS2版本：ROS2 Humble
+本项目使用AMD/Xilinx的Kria KR260 FPGA开发套件
+关于KR260的官方介绍在这里：https://china.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html
 
-编程语言：Python 3.10
-
-机械臂类型：STM32驱动6自由度PWM机械臂
-
-机械臂通信方式：USB 串口通信
-
-摄像头：免驱USB摄像头
+本项目在以下环境中完成测试：
+- Ubuntu版本：Ubuntu 22.0
+- ROS2版本：ROS2 Humble
+- 编程语言：Python 3.10
+- 机械臂类型：STM32驱动6自由度PWM机械臂
+- 机械臂通信方式：USB 串口通信
+- 摄像头：免驱USB摄像头
 
 [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
 
@@ -40,10 +38,10 @@ ROS2版本：ROS2 Humble
  
 ## 1. 使用流程：
 
-### 1.1 KR260 启动部分
+### 1.1 KR260 启动
 See [如何启动KR260](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8KR260.md)
 
-### 1.2 KR260 ROS环境配置部分
+### 1.2 KR260 ROS环境配置
 #### 1.2.1 ROS2
 See [在KR260上运行ROS](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%9C%A8KR260%E4%B8%8A%E8%BF%90%E8%A1%8CROS)
 
@@ -52,7 +50,7 @@ See [在KR260上运行ROS](https://github.com/shilicon/kr260/blob/main/%E5%A6%82
 sudo apt install ros-humble-usb-cam
 ```
 
-## 2. 机械臂工程配置部分
+## 2. 机械臂工程配置
 
 ### 2.1 设计参考 
 See [opencv_ros2](https://github.com/jeffreyttc/opencv_ros2)
@@ -61,7 +59,7 @@ and
 
 See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 
-### 2.2 Step:
+### 2.2 主要步骤:
 #### 2.2.0. 下载工程文件
 
 使用以下指令下载ROS2的文件
