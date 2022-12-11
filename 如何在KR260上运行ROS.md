@@ -96,4 +96,4 @@ ROS虽然叫做机器人操作系统，但本质并不是操作系统，而是�
   ros2 run demo_nodes_py listener
   ```
   期待的结果：左，发布信息；右，接收信息
- ![here](https://github.com/shilicon/kr260/blob/main/talk_sub.png)
+ ![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/talk_sub.png)
