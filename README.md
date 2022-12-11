@@ -40,11 +40,11 @@
 ## 1. 使用流程：
 
 ### 1.1 KR260 启动
-See [如何启动KR260](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8KR260.md)
+See [如何启动KR260](https://github.com/shilicon/kr260_robotic_arm/blob/main/%E5%A6%82%E4%BD%95%E5%90%AF%E5%8A%A8KR260.md)
 
 ### 1.2 KR260 ROS环境配置
 #### 1.2.1 ROS2
-See [在KR260上运行ROS](https://github.com/shilicon/kr260/blob/main/%E5%A6%82%E4%BD%95%E5%9C%A8KR260%E4%B8%8A%E8%BF%90%E8%A1%8CROS)
+See [在KR260上运行ROS](https://github.com/shilicon/kr260_robotic_arm/blob/main/%E5%A6%82%E4%BD%95%E5%9C%A8KR260%E4%B8%8A%E8%BF%90%E8%A1%8CROS.md)
 
 #### 1.2.2 Camera
 ```
@@ -66,7 +66,7 @@ See [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
 使用以下指令下载ROS2的文件
 
 ```
-git clone https://github.com/shilicon/kr260
+git clone https://github.com/shilicon/kr260_robotic_arm
 ```
 文件结构如下：
 
