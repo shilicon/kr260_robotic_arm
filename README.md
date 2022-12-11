@@ -23,7 +23,7 @@
 
 本项目使用AMD/Xilinx的Kria KR260 FPGA开发套件
 
-关于KR260的官方介绍在这里：https://china.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html
+关于KR260的官方介绍在[这里](https://china.xilinx.com/products/som/kria/kr260-robotics-starter-kit.html)
 
 本项目在以下环境中完成测试：
 - Ubuntu版本：Ubuntu 22.0
