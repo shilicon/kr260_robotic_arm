@@ -40,23 +40,23 @@ KR260相关：xilinx_kr260.bsp，Ubuntu 22.04 LTS
 
   进入Vivado的界面，在左上角选择Tool-->Vivado Store 进入
 
-![here](https://github.com/shilicon/kr260/blob/main/image/vivado.JPEG)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivado.JPEG)
 
 1. Go to git
 
 在Vivado Store里，如果是外网，可以直接利用Refresh更新，获得KR260的支持包。Vivado全局科学上网 也更新不了，选择Go to Git。
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoStore.jpeg)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoStore.jpeg)
 
 2. 在网站中选择board，查看支持的板卡
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoGit.JPEG)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoGit.JPEG)
 
 
 3. 能够看到支持的板卡 vendor，是可以发现，一家Xilinx的官方板卡都没有。（这个问题让我困惑了很久）。选择master，查看Branches，可以发现针对2022.1的版本，里面有针对KR260的。
 
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoBoard.jpeg)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoBoard.jpeg)
 
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoBra1.jpeg)
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoBra2.jpeg)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoBra1.jpeg)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoBra2.jpeg)
 
 4.  git clone 这个库，并且更新分支和本地代码。以下是KR260的支持文件
 ```
@@ -71,7 +71,7 @@ git pull
 D:\vivado\Vivado\2022.1\data\xhub\boards\XilinxBoardStore\boards\Xilinx
 ```
 将文件解压后导入文件夹，然后重启vivado，就能在新建工程时的板卡选取看到
-![here](https://github.com/shilicon/kr260/blob/main/image/vivadoStore2.jpeg)
+![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/vivadoStore2.jpeg)
 
 ## 2. Petalinux 的生成过程 (Linux)
 ### 2.1 下载Petalinux 
@@ -134,14 +134,14 @@ chmod 777 ./petalinux-v2020.2-final-installer.run
   Terminal中输入echo $PETALINUX
 
   如果打印出正确的安装路径说明安装成功，如：
-  ![here](https://github.com/shilicon/kr260/blob/main/image/petalinux.png)
+  ![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/petalinux.png)
 
   ### 2.4 下载KR260的bsp文件
  See [Here](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513/Kria+K26+SOM)
- ![here](https://github.com/shilicon/kr260/blob/main/image/bsp.jpeg)
+ ![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/bsp.jpeg)
 
  以下两个warning不需要解决，不影响正常使用
-   ![here](https://github.com/shilicon/kr260/blob/main/image/warning.jpeg)
+   ![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/warning.jpeg)
 
  ## 3. 工程文件的配置
  ### 3.1 实现设计
@@ -149,7 +149,7 @@ chmod 777 ./petalinux-v2020.2-final-installer.run
 
  ### 3.2 导出 硬件描述 文件
  生成bit流文件，点击 File -> Export -> Export Hardware
-   ![here](hardware.png)
+   ![here](https://github.com/shilicon/kr260_robotic_arm/blob/main/image/hardware.png)
  ## 4. Petalinux 生成内核
  ### 4.1 生成需要的内核文件
 
